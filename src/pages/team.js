@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout/layout'
 
-const IndexPage = () => (
+const TeamPage = () => (
   <Layout>
-    <h1>Karlsruhe JS</h1>
+    <h1>Team</h1>
   </Layout>
 )
 
-export default IndexPage
+export default TeamPage
