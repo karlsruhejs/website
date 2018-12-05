@@ -1,31 +1,31 @@
 import React from 'react'
 import Layout from '../components/layout/layout'
 
-import logo from '../images/logo.png'
+import logo from '../images/js-logo.svg'
 
 const IndexPage = () => (
-  <Layout color={'blue'}>
+  <Layout>
     <section
-    // style={{
-    //   backgroundColor: '#FED008',
-    //   position: 'fixed',
-    //   top: '0',
-    //   left: '0',
-    //   height: '100vh',
-    //   width: '100vw',
-    // }}
+      style={{
+        alignItems: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+        justifyContent: 'center',
+      }}
     >
       <img
         src={logo}
         alt="Karlsruhe JS"
         style={{
-          height: '75px',
+          height: '120px',
         }}
       />
       <h4
         style={{
-          fontWeight: '100',
           color: '#4a4a4a',
+          fontWeight: '100',
+          fontSize: '2em',
         }}
       >
         The meetup for JavaScript lovers in Karlsruhe.
