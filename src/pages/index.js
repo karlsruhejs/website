@@ -1,18 +1,47 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import Layout from '../components/layout/layout'
 
-import Layout from '../components/layout'
-import Image from '../components/image'
+import logo from '../images/js-logo.svg'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <section
+      style={{
+        alignItems: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+        justifyContent: 'center',
+      }}
+    >
+      <img
+        src={logo}
+        alt="Karlsruhe JS"
+        style={{
+          height: '250px',
+        }}
+      />
+      <h4
+        style={{
+          color: '#4a4a4a',
+          fontWeight: '400',
+          fontSize: '1.5em',
+          margin: '20px 30px',
+          textAlign: 'center',
+        }}
+      >
+        The meetup for JavaScript lovers in Karlsruhe.
+      </h4>
+      <h1
+        style={{
+          fontSize: '4em',
+          color: '#4a4a4a',
+          margin: '0 30px',
+        }}
+      >
+        KarlsruheJS
+      </h1>
+    </section>
   </Layout>
 )
 
