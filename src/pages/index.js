@@ -18,22 +18,25 @@ const IndexPage = () => (
         src={logo}
         alt="Karlsruhe JS"
         style={{
-          height: '120px',
+          height: '250px',
         }}
       />
       <h4
         style={{
           color: '#4a4a4a',
-          fontWeight: '100',
-          fontSize: '2em',
+          fontWeight: '400',
+          fontSize: '1.5em',
+          margin: '20px 30px',
+          textAlign: 'center',
         }}
       >
         The meetup for JavaScript lovers in Karlsruhe.
       </h4>
       <h1
         style={{
-          fontSize: '3em',
+          fontSize: '4em',
           color: '#4a4a4a',
+          margin: '0 30px',
         }}
       >
         KarlsruheJS
