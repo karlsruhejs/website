@@ -15,7 +15,7 @@ const Menu = () => {
                 className="menu__item"
                 activeClassName="menu__item--selected"
               >
-                Home
+                home
               </Link>
             </li>
             <li>
@@ -24,7 +24,7 @@ const Menu = () => {
                 className="menu__item"
                 activeClassName="menu__item--selected"
               >
-                Team
+                team
               </Link>
             </li>
             <li>
@@ -33,7 +33,7 @@ const Menu = () => {
                 className="menu__item"
                 activeClassName="menu__item--selected"
               >
-                Meetups
+                meetups
               </Link>
             </li>
             <li>
@@ -42,7 +42,7 @@ const Menu = () => {
                 className="menu__item"
                 activeClassName="menu__item--selected"
               >
-                Join
+                join
               </Link>
             </li>
           </ul>
