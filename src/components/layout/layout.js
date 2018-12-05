@@ -31,7 +31,7 @@ const Layout = ({ children }) => (
                 meta={[
                   {
                     name: 'description',
-                    content: 'A portfolio for Emma Wedekind',
+                    content: 'KarlsruheJS website',
                   },
                   { name: 'keywords', content: 'react, web development' },
                 ]}
