@@ -1,9 +1,10 @@
 import React from 'react'
+
 import Layout from '../components/layout/layout'
 
 const MeetupsPage = () => (
   <Layout>
-    <h1>Meetups</h1>
+    <div />
   </Layout>
 )
 

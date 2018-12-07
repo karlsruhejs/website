@@ -1,6 +1,13 @@
 .menu {
   list-style-type: none;
   display: flex;
+  padding: 0;
+}
+
+.menu__content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .menu__section {
@@ -13,4 +20,8 @@
   margin: 0px 20px;
   text-decoration: none;
   color: #4a4a4a;
+}
+
+.menu__item--selected {
+  font-weight: bold;
 }
