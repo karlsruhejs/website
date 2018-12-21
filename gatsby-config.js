@@ -3,6 +3,7 @@ module.exports = {
     title: 'Karlsruhe JS',
   },
   plugins: [
+    'gatsby-plugin-page-transitions',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,

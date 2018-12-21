@@ -5,7 +5,11 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import { Location } from '@reach/router'
 
+import PageTransition from 'gatsby-plugin-page-transitions'
+
 import Menu from '../menu/menu'
+import MeetupBanner from '../meetup-banner/meetup-banner'
+
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -39,7 +43,10 @@ const Layout = ({ children }) => (
                 <html lang="en" />
               </Helmet>
               <Menu />
-              <div className="layout layout__child-container">{children}</div>
+              <PageTransition>
+                <div className="layout layout__child-container">{children}</div>
+              </PageTransition>
+              <MeetupBanner />
             </div>
           )
         }}

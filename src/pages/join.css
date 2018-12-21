@@ -1,0 +1,10 @@
+.title {
+  position: absolute;
+  left: 50px;
+}
+
+@media (min-width: 850px) {
+  .title {
+    left: 100px;
+  }
+}

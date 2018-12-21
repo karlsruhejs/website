@@ -1,0 +1,47 @@
+.title {
+  position: absolute;
+  left: 50px;
+}
+
+.team__image-wrapper {
+  margin-top: 100px;
+}
+
+.team__member-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.team__member-image {
+  height: 300px;
+}
+
+.team__member-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.team__member-name {
+  margin: 0;
+}
+
+@media (min-width: 850px) {
+  .team__image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .team__member-group {
+    min-width: 350px;
+  }
+
+  .title {
+    left: 100px;
+  }
+}
