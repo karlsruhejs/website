@@ -1,19 +1,16 @@
 import React from 'react'
 import Layout from '../components/layout/layout'
 
-import eugene from '../images/eugene.svg'
-import kahlil from '../images/kahlil.svg'
-import emma from '../images/emma.svg'
-import manuel from '../images/manuel.svg'
+import Img from 'gatsby-image'
 
 import './team.css'
 
-const TeamPage = () => (
+const TeamPage = ({ data }) => (
   <Layout>
     <h1 className="title">Team</h1>
     <div className="team__image-wrapper">
       <section className="team__member-group">
-        <img className="team__member-image" src={eugene} alt="Eugene" />
+        <Img fixed={data.eugene.childImageSharp.fixed} />
         <div className="team__member-info">
           <h3 className="team__member-name">Eugene Terehov</h3>
           <p>CTO @ Bettervest</p>
@@ -30,7 +27,7 @@ const TeamPage = () => (
       </section>
 
       <section className="team__member-group">
-        <img className="team__member-image" src={kahlil} alt="Kahlil" />
+        <Img fixed={data.kahlil.childImageSharp.fixed} />
         <div className="team__member-info">
           <h3 className="team__member-name">Kahlil Lechelt</h3>
           <p>Senior Software Engineer @ LogMeIn</p>
@@ -46,7 +43,7 @@ const TeamPage = () => (
         </div>
       </section>
       <section className="team__member-group">
-        <img className="team__member-image" src={emma} alt="Emma" />
+        <Img fixed={data.emma.childImageSharp.fixed} />
         <div className="team__member-info">
           <h3 className="team__member-name">Emma Wedekind</h3>
           <p>Software Engineer @ LogMeIn</p>
@@ -62,7 +59,7 @@ const TeamPage = () => (
         </div>
       </section>
       <section className="team__member-group">
-        <img className="team__member-image" src={manuel} alt="Manuel" />
+        <Img fixed={data.manuel.childImageSharp.fixed} />
         <div className="team__member-info">
           <h3 className="team__member-name">Manuel Rauber</h3>
           <p>Software Architect @ Thinktecture AG</p>
@@ -82,3 +79,36 @@ const TeamPage = () => (
 )
 
 export default TeamPage
+
+export const query = graphql`
+  query {
+    eugene: file(relativePath: { eq: "eugene.png" }) {
+      childImageSharp {
+        fixed(width: 260, height: 320) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    kahlil: file(relativePath: { eq: "kahlil.png" }) {
+      childImageSharp {
+        fixed(width: 260, height: 320) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    emma: file(relativePath: { eq: "emma.png" }) {
+      childImageSharp {
+        fixed(width: 260, height: 300) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    manuel: file(relativePath: { eq: "manuel.png" }) {
+      childImageSharp {
+        fixed(width: 260, height: 320) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
