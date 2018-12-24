@@ -1,4 +1,5 @@
 .meetup-banner {
+  display: none;
   position: absolute;
   color: #fff;
   right: 0;
@@ -29,4 +30,10 @@
 
 .layout__homepage .meetup-banner__link {
   color: #4a4a4a;
+}
+
+@media (min-width: 1170px) {
+  .meetup-banner {
+    display: block;
+  }
 }

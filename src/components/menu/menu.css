@@ -2,12 +2,12 @@
   list-style-type: none;
   display: flex;
   padding: 0;
+  position: relative;
 }
 
 .menu__content-wrapper {
   width: 100%;
   display: flex;
-  justify-content: center;
 }
 
 .menu__section {
@@ -24,4 +24,24 @@
 
 .menu__item--selected {
   font-weight: bold;
+}
+
+.menu__twitter-link {
+  position: absolute;
+  right: 10px;
+  width: 30px;
+  height: 20px;
+}
+
+.menu__twitter {
+  fill: #f06050;
+}
+
+@media (min-width: 850px) {
+  .menu__content-wrapper {
+    justify-content: center;
+  }
+  .menu__twitter-link {
+    right: 20px;
+  }
 }
