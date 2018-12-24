@@ -34,7 +34,7 @@ const IndexPage = () => (
       </h4>
       <h1
         style={{
-          fontSize: '4em',
+          fontSize: '3em',
           color: '#4a4a4a',
           margin: '0 30px',
         }}

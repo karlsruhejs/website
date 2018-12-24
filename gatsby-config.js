@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Karlsruhe JS',
+    title: 'KarlsruheJS',
   },
   plugins: [
+    'gatsby-plugin-page-transitions',
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-favicon`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
