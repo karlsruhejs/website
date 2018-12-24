@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "KarlsruheJS",
+  "description": "The website for the KarlsruheJS Meetup",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Emma Wedekind",
   "dependencies": {
     "@reach/router": "^1.2.1",
     "gatsby": "^2.0.53",
@@ -33,6 +33,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/karlsruhejs/website"
   }
 }
