@@ -29,6 +29,15 @@ const Menu = () => {
             </li>
             <li>
               <Link
+                to="/blog"
+                className="menu__item"
+                activeClassName="menu__item--selected"
+              >
+                blog
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/join"
                 className="menu__item"
                 activeClassName="menu__item--selected"
