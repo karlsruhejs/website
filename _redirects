@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://karlsruhejs.netlify.com/* http://karlsruhejs.org/:splat 301!
