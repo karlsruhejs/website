@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout/layout'
 import { Link, graphql } from 'gatsby'
 
-import BlogMenu from '../components/blogMenu/blogMenu'
+import { BlogMenu } from '../components/blogMenu/blogMenu'
 
 import './blog.css'
 
@@ -12,10 +12,13 @@ const BlogPage = ({ data }) => (
     <BlogMenu />
     <section className="blog__section">
       {data.allMarkdownRemark.edges.map(post => (
-        <div key={post.node.frontmatter.date}>
+        <div key={post.node.frontmatter.date} className="blog__post">
           <h1>{post.node.frontmatter.title}</h1>
+          <h3>{post.node.frontmatter.formattedDate}</h3>
           <p>{post.node.frontmatter.description}</p>
-          <Link to={post.node.frontmatter.path}>Keep reading</Link>
+          <Link to={post.node.frontmatter.path} className="blog__link">
+            Keep reading
+          </Link>
         </div>
       ))}
     </section>
@@ -36,6 +39,7 @@ export const query = graphql`
             author
             date
             description
+            formattedDate
           }
         }
       }

@@ -1,6 +1,7 @@
 ---
 path: '/advanced-typescript-and-web-drm'
 date: '2019-01-08'
+formattedDate: 'January 2019'
 title: 'Advanced TypeScript & WebDRM'
 author: 'Emma Wedekind'
 description: 'This is a description about the first talk.'
